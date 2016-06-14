@@ -9,7 +9,7 @@ import java.util.UUID;
  */
 
 @Table(keyspace = "jumpstart", name = "user01")
-public class EntityUser01 {
+public class EntityUser {
 
     @PartitionKey
     private UUID id;
@@ -25,10 +25,10 @@ public class EntityUser01 {
     @Column(name="metric_value")
     private int metricValue;
 
-    public EntityUser01() {
+    public EntityUser() {
     }
 
-    public EntityUser01(String name, String address, String phone, String metricName, int metricValue) {
+    public EntityUser(String name, String address, String phone, String metricName, int metricValue) {
         this.id = UUID.randomUUID();
         this.name = name;
         this.address = address;

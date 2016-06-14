@@ -4,7 +4,7 @@ import com.datastax.driver.core.Session;
 /**
  * Created by markarquette on 4/14/16.
  */
-public class ManagerUser01 {
+public class ManagerUser {
 
     Cluster cluster;
     Session session;
@@ -22,7 +22,7 @@ public class ManagerUser01 {
         cluster.close();
     }
 
-    public ManagerUser01() {
+    public ManagerUser() {
         this.connectSession();
     }
 
